@@ -1,0 +1,39 @@
+using Syestem;
+using System.IO;
+
+  namespase Test
+ { 
+    class Program
+    {
+        
+        static void Main(string[] args)
+       {
+            Text.Writer save_out = Console.Out;
+            YextReader save_in = Console.In;
+            var new_out = new StreamWriter(@"output.txt");
+            var new_in = new StreamReader(@"input.txt");
+            Console.SetOut(new_out);
+            Console.SetIn(new_in);
+            
+            double a_1, a_2, a_3, a_4, a_5;
+            double my_tmp, geo;
+            a_1 = Convert.ToDouble(Console.ReadLine());
+            a_2 = Convert.ToDouble(Console.ReadLine());
+           a_3 = Convert.ToDouble(Console.ReadLine());
+           a_4 = Convert.ToDouble(Console.ReadLine());
+          a_5 = Convert.ToDouble (Console.ReadLine());
+         
+         if (( s ==0) || (a_2 - a_5) > 100))
+         Console.WriteLine("ERROR")
+         else
+         {
+         s = a_1 * Math.Sqrt (a_2 - a_5) / a_3;
+         k = Math.Sqrt (( a_3 / a_1) * (a_2)*2);
+         if ( a_2 - a_5 ==0)
+         Console.WriteLine("ERROR");
+ 
+ Console.SetOut(save_out); new_out.Close();
+ Console.SetIn(save_in); new_in.Close();
+           }
+      }
+  }
